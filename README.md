@@ -1,34 +1,16 @@
-# F3RM Website
+# Nerfies
 
-Project website for the paper "Distilled Feature Fields Enable Few-Shot Language-Guided Manipulation".
+This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
 
-**Deployed at:** https://f3rm.csail.mit.edu/
+If you find Nerfies useful for your work please cite:
+```
+@article{park2021nerfies
+  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
+  title     = {Nerfies: Deformable Neural Radiance Fields},
+  journal   = {ICCV},
+  year      = {2021},
+}
+```
 
-## 🚀 Quick start
-
-This website is built using [Gatsby.js](https://www.gatsbyjs.com/) and [Tailwind CSS](https://tailwindcss.com/).
-
-1. Install Node.js (v18 or later required). You can follow the instructions.
-   [here](https://www.gatsbyjs.com/docs/tutorial/getting-started/part-0/#nodejs)
-2. Install yarn with `npm install yarn`.
-3. Install dependencies of this project with `yarn install`.
-4. Start the development server with `yarn develop`.
-    - The website should be available at http://localhost:8000/
-    - You can make edits to `src/pages/index.tsx` to see the website update in real-time
-
-Checkout the Gatsby.js [documentation](https://www.gatsbyjs.com/docs/tutorial/getting-started/) for more details.
-
-## 📦️ Build and Deployment
-
-To build the website locally, run `yarn build`.
-
-To deploy the website to GitHub pages:
-- Run `yarn deploy-ssh` for SSH-based auth.
-- Run `yarn deploy` for HTTPS-based auth.
-
-**Note:** you will need to change your Git remote in `package.json` to point to your own repository if you are
-using this template for your own website.
-
-## 📃 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+# Website License
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
