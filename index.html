@@ -6,7 +6,7 @@
         content="ActionFlow">
   <meta name="keywords" content="ActionFlow, Imitation Learning, Flow Matching, Robotics, Robot Learning">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ActionFlow: Efficient, Accurate, and Fast Policies with Spatially Symmetric Flow Matching</title>
+  <title>ActionFlow: Equivariant, Accurate, and Efficient Policies with Spatially Symmetric Flow Matching</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -74,7 +74,54 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-2 publication-title">ActionFlow: Efficient, Accurate, and Fast Policies with Spatially Symmetric Flow Matching </h1>
+          <h1 class="title is-2 publication-title">ActionFlow: Equivariant, Accurate, and Efficient Policies with Spatially Symmetric Flow Matching</h1>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a>Niklas Funk</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a>Julen Urain</a><sup>1,2</sup>,</span>
+            </span>
+            <span class="author-block">
+              <a>Joao Carvalho</a><sup>1</sup>,</span>
+            </span>
+            <span class="author-block">
+              <a>Vignesh Prasad</a><sup>1</sup>,</span>
+            </span>
+          </div>
+          
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a>Georgia Chalvatzaki</a><sup>1,3</sup>,</span>
+            <span class="author-block">
+              <a>Jan Peters</a><sup>1,2,3</sup>
+            </span>
+<!--            <span class="author-block">-->
+<!--              <a href="http://sofienbouaziz.com">Sofien Bouaziz</a><sup>2</sup>,-->
+<!--            </span>-->
+<!--            <span class="author-block">-->
+<!--              <a href="https://www.danbgoldman.com">Dan B Goldman</a><sup>2</sup>,-->
+<!--            </span>-->
+<!--            <span class="author-block">-->
+<!--              <a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a><sup>1,2</sup>,-->
+<!--            </span>-->
+<!--            <span class="author-block">-->
+<!--              <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>-->
+<!--            </span>-->
+          </div>
+          
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+             <sup>1</sup>TU Darmstadt,</span>
+            <span class="author-block">
+              <sup>2</sup>German Research Center for AI (DFKI),
+            </span>
+            <span class="author-block">
+              <sup>3</sup>Hessian.AI
+            </span>
+
+          </div>
+
 
 <!--          <div class="is-size-5 publication-authors">-->
 <!--            <span class="author-block">-->
@@ -101,6 +148,24 @@
          <!-- <div class="is-size-5 publication-authors">
             <span class="author-block">Submitted to CoRL 2024</span>
           </div> -->
+
+
+          <div class="column has-text-centered">
+           <div class="publication-links">
+              <span class="link-block">
+                <a href="https://www.ias.informatik.tu-darmstadt.de/uploads/Team/NiklasFunk/ActionFlowAppendix.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Appendix</span>
+                </a>
+              </span>
+              </div>
+              </div>
+
+
+
 
 <!--          <div class="column has-text-centered">-->
 <!--            <div class="publication-links">-->
@@ -187,14 +252,13 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Most robotic tasks require a proper understanding of the 3D geometry of the scene.
-	     Despite the impressive results of deep generative models in complex manipulation tasks, the lack of a representation that encodes the intricate spatial relations between observations and actions usually leads to small spatial generalization capabilities, requiring large amounts of demonstrations.
-	     To tackle this problem, we introduce a novel policy class, ActionFlow.
-	     ActionFlow integrates spatial symmetry inductive biases while generating expressive action sequences.
-	     On the representation level, ActionFlow introduces an SE(3) Invariant Transformer architecture, which enables informed spatial reasoning based on the relative SE(3) poses between observations and actions.
-	     For action generation, ActionFlow leverages Flow Matching, a novel, state-of-the-art deep generative model that has been shown to generate high-quality samples with fast inference, an essential property for feedback control.
-	     In combination, ActionFlow policies exhibit strong spatial and locality biases and SE(3) equivariant action generation.
-	     Our experiments demonstrate the effectiveness of ActionFlow and its two main components on several simulated and real-world robotic manipulation tasks and confirm that we can obtain efficient, accurate, and fast policies with spatially symmetric flow matching.
+            Spatial understanding is a critical aspect of most robotic tasks, particularly when generalization is important.
+	    Despite the impressive results of deep generative models in complex manipulation tasks, the absence of a representation that encodes intricate spatial relationships between observations and actions often limits spatial generalization, necessitating large amounts of demonstrations.
+	    To tackle this problem, we introduce a novel policy class, ActionFlow. ActionFlow integrates spatial symmetry inductive biases while generating expressive action sequences.
+	    On the representation level, ActionFlow introduces an SE(3) Invariant Transformer architecture, which enables informed spatial reasoning based on the relative SE(3) poses between observations and actions.
+	    For action generation, ActionFlow leverages Flow Matching, a state-of-the-art deep generative model known for generating high-quality samples with fast inference - an essential property for feedback control.
+	    In combination, ActionFlow policies exhibit strong spatial and locality biases and SE(3)-equivariant action generation.
+	    Our experiments demonstrate the effectiveness of ActionFlow and its two main components on several simulated and real-world robotic manipulation tasks and confirm that we can obtain equivariant, accurate, and efficient policies with spatially symmetric flow matching.
           </p>
         </div>
       </div>
@@ -205,7 +269,7 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
-<iframe src="https://drive.google.com/file/d/1IwL49q5ZE_83y8YPSSwtUznlGJOsXhf5/preview" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+<iframe src="https://drive.google.com/file/d/1zEf_518bMmFBeYY93Zqs3H4H38W1vx0f/preview" frameborder="0" allow="autoplay" allowfullscreen></iframe>
         </div>
       </div>
     </div>
